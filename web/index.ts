@@ -104,7 +104,7 @@ const App = (_: any, state: AppState, setState: SetState) => {
     };
     const {
         fileType = 'png',
-        fontSize = '100px',
+        fontSize = '192px',
         theme = 'light',
         md = true,
         text = '🦍🌾',
