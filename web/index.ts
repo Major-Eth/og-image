@@ -142,16 +142,17 @@ const markdownOptions: DropdownOption[] = [
 ];
 
 const imageLightOptions: DropdownOption[] = [
-    { text: 'Vercel', value: 'https://assets.vercel.com/image/upload/front/assets/design/vercel-triangle-black.svg' },
-    { text: 'Next.js', value: 'https://assets.vercel.com/image/upload/front/assets/design/nextjs-black-logo.svg' },
-    { text: 'Hyper', value: 'https://assets.vercel.com/image/upload/front/assets/design/hyper-color-logo.svg' },
+    { text: 'APE', value: 'https://raw.githubusercontent.com/TBouder/ape-tax/7c6806489999e92061cffdf976ebf1a7e74d0653/public/gorilla.svg' },
+    { text: 'Vercel', value: 'https://raw.githubusercontent.com/TBouder/ape-tax/7c6806489999e92061cffdf976ebf1a7e74d0653/public/gorilla.svg' },
+    { text: 'Next.js', value: 'https://raw.githubusercontent.com/TBouder/ape-tax/7c6806489999e92061cffdf976ebf1a7e74d0653/public/gorilla.svg' },
+    { text: 'Hyper', value: 'https://raw.githubusercontent.com/TBouder/ape-tax/7c6806489999e92061cffdf976ebf1a7e74d0653/public/gorilla.svg' },
 ];
 
 const imageDarkOptions: DropdownOption[] = [
-
-    { text: 'Vercel', value: 'https://assets.vercel.com/image/upload/front/assets/design/vercel-triangle-white.svg' },
-    { text: 'Next.js', value: 'https://assets.vercel.com/image/upload/front/assets/design/nextjs-white-logo.svg' },
-    { text: 'Hyper', value: 'https://assets.vercel.com/image/upload/front/assets/design/hyper-bw-logo.svg' },
+    { text: 'APE', value: 'https://raw.githubusercontent.com/TBouder/ape-tax/7c6806489999e92061cffdf976ebf1a7e74d0653/public/gorilla.svg' },
+    { text: 'Vercel', value: 'https://raw.githubusercontent.com/TBouder/ape-tax/7c6806489999e92061cffdf976ebf1a7e74d0653/public/gorilla.svg' },
+    { text: 'Next.js', value: 'https://raw.githubusercontent.com/TBouder/ape-tax/7c6806489999e92061cffdf976ebf1a7e74d0653/public/gorilla.svg' },
+    { text: 'Hyper', value: 'https://raw.githubusercontent.com/TBouder/ape-tax/7c6806489999e92061cffdf976ebf1a7e74d0653/public/gorilla.svg' },
 ];
 
 const widthOptions = [
@@ -378,7 +379,7 @@ const App = (_: any, state: AppState, setState: SetState) => {
                         label: `Add Image ${images.length + 1}`,
                         onclick: () => {
                             const nextImage = images.length === 1
-                                ? 'https://cdn.jsdelivr.net/gh/remojansen/logo.ts@master/ts.svg'
+                                ? 'https://raw.githubusercontent.com/TBouder/ape-tax/7c6806489999e92061cffdf976ebf1a7e74d0653/public/gorilla.svg'
                                 : '';
                             setLoadingState({ images: [...images, nextImage] })
                         }
