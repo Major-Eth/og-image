@@ -83,13 +83,6 @@ function getCss(theme: string, fontSize: string) {
         font-style: normal;
         color: ${foreground};
     }
-    .title {
-        font-family: 'IBM Plex Mono', mono;
-        font-size: ${sanitizeHtml('16px')};
-        font-style: normal;
-        color: ${foreground};
-        line-height: 1.8;
-    }
     `;
 }
 
@@ -108,9 +101,6 @@ export function getHtml(parsedReq: ParsedRequest) {
             <div class="spacer">
             <div class="heading">
             ${emojify(text)}
-            </div>
-            <div class="spacer">
-            <div class="title">${emojify(sanitizeHtml('Made with 💙 by the 🦍 community'))}
             </div>
         </div>
     </body>

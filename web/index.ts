@@ -104,34 +104,14 @@ const App = (_: any, state: AppState, setState: SetState) => {
     };
     const {
         fileType = 'png',
-        fontSize = '192px',
-        theme = 'light',
-        md = true,
-        text = '🦍🌾',
-        images=[],
-        widths=[],
-        heights=[],
+        text = '🦍💙',
         showToast = false,
         messageToast = '',
         loading = true,
         overrideUrl = null,
     } = state;
-    const mdValue = md ? '1' : '0';
     const url = new URL(window.location.origin);
     url.pathname = `${encodeURIComponent(text)}.${fileType}`;
-    url.searchParams.append('theme', theme);
-    url.searchParams.append('md', mdValue);
-    url.searchParams.append('fontSize', fontSize);
-    for (let image of images) {
-        url.searchParams.append('images', image);
-    }
-    for (let width of widths) {
-        url.searchParams.append('widths', width);
-    }
-    for (let height of heights) {
-        url.searchParams.append('heights', height);
-    }
-
     return H('div',
         { className: 'containerCol' },
         H('div',
